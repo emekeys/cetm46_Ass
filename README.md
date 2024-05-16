@@ -16,7 +16,7 @@ A Streamlit application for predicting student performance based on various feat
 
 ## Overview
 
-This Streamlit app allows users to input student data and receive predictions on the student's performance group (below-average, average, high achievers) along with recommendations for improvement. The app uses a pre-trained KMeans clustering model.
+This Streamlit app allows users to input student data and receive predictions on the student's performance group (below-average, average, high achievers) along with recommendations for improvement and visualization of the predicted result. The app uses a pre-trained KMeans clustering model.
 
 ## Features
 
