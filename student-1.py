@@ -12,24 +12,24 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the pickled models
-with open('C:/Users/MD/Downloads/gender_encoder.pkl', 'rb') as f:
+with open('gender_encoder.pkl', 'rb') as f:
     gender_encoder = pickle.load(f)
-with open('C:/Users/MD/Downloads/race_ethnicity_encoder.pkl', 'rb') as f:
+with open('race_ethnicity_encoder.pkl', 'rb') as f:
     race_ethnicity_encoder = pickle.load(f)
-with open('C:/Users/MD/Downloads/lunch_encoder.pkl', 'rb') as f:
+with open('lunch_encoder.pkl', 'rb') as f:
     lunch_encoder = pickle.load(f)
-with open('C:/Users/MD/Downloads/parental_education_encoder.pkl', 'rb') as f:
+with open('parental_education_encoder.pkl', 'rb') as f:
     parental_education_encoder = pickle.load(f)
-with open('C:/Users/MD/Downloads/test_prep_encoder.pkl', 'rb') as f:
+with open('test_prep_encoder.pkl', 'rb') as f:
     test_prep_encoder = pickle.load(f)
     
-with open('C:/Users/MD/Downloads/scaler.pkl', 'rb') as f:
+with open('scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
-with open('C:/Users/MD/Downloads/pca.pkl', 'rb') as f:
+with open('pca.pkl', 'rb') as f:
     pca = pickle.load(f)
 
-with open('C:/Users/MD/Downloads/kmeans.pkl', 'rb') as f:
+with open('kmeans.pkl', 'rb') as f:
     kmeans = pickle.load(f)
 
 
@@ -38,13 +38,13 @@ def get_recommendations(cluster_label):
     recommendations = {}
     if cluster_label == 0:
         recommendations['message'] = "Based on the characteristics provided, you belong to the below-average performers group. We recommend offering additional support and resources to help improve your academic performance."
-        recommendations['image']='C:/Users/MD/Downloads/The 11 Stages of Getting Your Child to Wipe Himself (Successfully).GIF'
+        recommendations['image']='The 11 Stages of Getting Your Child to Wipe Himself (Successfully).GIF'
     elif cluster_label == 1:
         recommendations['message'] = "Based on the characteristics provided, you belong to the high achievers group. Consider exploring advanced coursework or enrichment activities to further challenge yourself."
-        recommendations['image']='C:/Users/MD/Downloads/Bright Success Needs a Process Quote Mobile Video.GIF'
+        recommendations['image']='Bright Success Needs a Process Quote Mobile Video.GIF'
     elif cluster_label == 2:
         recommendations['message'] = "Based on the characteristics provided, you belong to the average performers group. Providing consistent support and encouragement can help maintain your current academic performance."
-        recommendations['image']='C:/Users/MD/Downloads/Animated Greeting Card You Are Amazing GIF - Animated Greeting Card You Are Amazing - Discover & Share GIFs.GIF'
+        recommendations['image']='Animated Greeting Card You Are Amazing GIF - Animated Greeting Card You Are Amazing - Discover & Share GIFs.GIF'
     else:
         recommendations['message'] = "Unable to determine recommendations based on provided characteristics."
 
@@ -107,11 +107,11 @@ def predict_cluster(new_data):
 
 
 def main():
-    data=pd.read_csv('C:/Users/MD/Downloads/StudentsPerformance (1).csv')
+    data=pd.read_csv('StudentsPerformance (1).csv')
     score_columns = ['math score', 'reading score', 'writing score']
     if app_mode=='Home': 
         st.title('STUDENT CLUSTER PREDICTION :') 
-        st.image('C:/Users/MD/Downloads/pexels-keira-burton-6147053.jpg')
+        st.image('pexels-keira-burton-6147053.jpg')
       
         st.markdown('Dataset used for Prediction:')
         
