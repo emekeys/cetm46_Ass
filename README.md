@@ -36,7 +36,7 @@ Ensure you have Python 3.6 or higher installed.
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/your-username/student-performance-predictor.git
+    git clone https://github.com/emekeys/cetm46_Ass.git
     cd student-performance-predictor
     ```
 
