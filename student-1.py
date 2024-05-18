@@ -190,11 +190,7 @@ def main():
 	    
             recommendations = predict_cluster(new_data)
             st.write(recommendations['message'])
-	    try:
-		    st.image(recommendations['image'])
-	    except Exception as e:
-		    st.error(f"Failed to load image: {e}")
-            
+	    st.image(recommendations['image'])
             st.subheader('Your Scores vs. Overall Distribution')
 
             # User data for visualization
