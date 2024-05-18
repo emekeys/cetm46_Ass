@@ -40,10 +40,10 @@ def get_recommendations(cluster_label):
         recommendations['image']='The 11 Stages of Getting Your Child to Wipe Himself (Successfully).gif'
     elif cluster_label == 1:
         recommendations['message'] = "Based on the characteristics provided, you belong to the high achievers group. Consider exploring advanced coursework or enrichment activities to further challenge yourself."
-        recommendations['image']='Bright Success Needs a Process Quote Mobile Video.GIF'
+        recommendations['image']='Bright Success Needs a Process Quote Mobile Video.gif'
     elif cluster_label == 2:
         recommendations['message'] = "Based on the characteristics provided, you belong to the average performers group. Providing consistent support and encouragement can help maintain your current academic performance."
-        recommendations['image']='Animated Greeting Card You Are Amazing GIF - Animated Greeting Card You Are Amazing - Discover & Share GIFs.GIF'
+        recommendations['image']='Animated Greeting Card You Are Amazing GIF - Animated Greeting Card You Are Amazing - Discover & Share GIFs.gif'
     else:
         recommendations['message'] = "Unable to determine recommendations based on provided characteristics."
 
