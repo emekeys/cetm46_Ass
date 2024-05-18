@@ -12,8 +12,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the pickled models
-with open('gender_encoder.pkl', 'rb') as f:
-    gender_encoder = pickle.load(f)
+
 with open('race_ethnicity_encoder.pkl', 'rb') as f:
     race_ethnicity_encoder = pickle.load(f)
 with open('lunch_encoder.pkl', 'rb') as f:
@@ -187,10 +186,10 @@ def main():
         new_data = pd.DataFrame(user_input)
 
         if st.button("Predict Cluster"):
-	    
             recommendations = predict_cluster(new_data)
             st.write(recommendations['message'])
-	    st.image(recommendations['image'])
+            st.image(recommendations['image'])
+            
             st.subheader('Your Scores vs. Overall Distribution')
 
             # User data for visualization
