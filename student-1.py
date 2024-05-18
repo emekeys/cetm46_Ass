@@ -37,7 +37,7 @@ def get_recommendations(cluster_label):
     recommendations = {}
     if cluster_label == 0:
         recommendations['message'] = "Based on the characteristics provided, you belong to the below-average performers group. We recommend offering additional support and resources to help improve your academic performance."
-        recommendations['image']='The 11 Stages of Getting Your Child to Wipe Himself (Successfully).GIF'
+        recommendations['image']='The 11 Stages of Getting Your Child to Wipe Himself (Successfully).gif'
     elif cluster_label == 1:
         recommendations['message'] = "Based on the characteristics provided, you belong to the high achievers group. Consider exploring advanced coursework or enrichment activities to further challenge yourself."
         recommendations['image']='Bright Success Needs a Process Quote Mobile Video.GIF'
