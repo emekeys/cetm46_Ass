@@ -13,6 +13,8 @@ import matplotlib.pyplot as plt
 
 # Load the pickled models
 
+with open('gender_encoder.pkl', 'rb') as f:
+    gender_encoder = pickle.load(f)
 with open('race_ethnicity_encoder.pkl', 'rb') as f:
     race_ethnicity_encoder = pickle.load(f)
 with open('lunch_encoder.pkl', 'rb') as f:
