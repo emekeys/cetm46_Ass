@@ -114,7 +114,7 @@ def main():
         st.title('STUDENT CLUSTER PREDICTION :') 
         st.image('pexels-keira-burton-6147053.jpg')
 	st.write('This application helps you to predict student performance based on their score on both reading, writing, and mathematics and also visualizes student performance')
-      	st.write('Use the sidebar to navigate to the prediction section of the app')
+	st.write('Use the sidebar to navigate to the prediction section of the app')
         st.markdown('Dataset used for Prediction:')
         
         
