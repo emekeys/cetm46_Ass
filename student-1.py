@@ -114,7 +114,7 @@ def main():
         st.write('This application helps you to predict student performance based on their score on both reading, writing, and mathematics and also visualizes student performance')
         st.write('Use the sidebar to navigate to the prediction section of the app')
       
-        st.markdown('Dataset used for Prediction:')
+
         
         
         for col in score_columns:
@@ -124,7 +124,7 @@ def main():
         st.title('Students Performance Analysis')
 
 # Display the data used for the analysis
-        st.write('Data:')
+        st.write('Overall Dataset used for prediction:')
         st.write(data.head(10))
 
 # Data manipulation
