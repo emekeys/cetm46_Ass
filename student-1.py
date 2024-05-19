@@ -124,7 +124,7 @@ def main():
         st.title('Students Performance Analysis')
 
 # Display the data used for the analysis
-        st.write('Overall Dataset used for prediction:')
+        st.write('Overall Dataset used for prediction(first 10 rows):')
         st.write(data.head(10))
 
 # Data manipulation
