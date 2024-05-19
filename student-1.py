@@ -13,8 +13,6 @@ import matplotlib.pyplot as plt
 
 # Load the pickled models
 
-with open('gender_encoder.pkl', 'rb') as f:
-    gender_encoder = pickle.load(f)
 with open('race_ethnicity_encoder.pkl', 'rb') as f:
     race_ethnicity_encoder = pickle.load(f)
 with open('lunch_encoder.pkl', 'rb') as f:
@@ -39,13 +37,13 @@ def get_recommendations(cluster_label):
     recommendations = {}
     if cluster_label == 0:
         recommendations['message'] = "Based on the characteristics provided, you belong to the below-average performers group. We recommend offering additional support and resources to help improve your academic performance."
-        recommendations['image']='The 11 Stages of Getting Your Child to Wipe Himself (Successfully).gif'
+        recommendations['image']='The 11 Stages of Getting Your Child to Wipe Himself (Successfully).GIF'
     elif cluster_label == 1:
         recommendations['message'] = "Based on the characteristics provided, you belong to the high achievers group. Consider exploring advanced coursework or enrichment activities to further challenge yourself."
-        recommendations['image']='Animated Greeting Card You Are Amazing GIF - Animated Greeting Card You Are Amazing - Discover & Share GIFs.gif'
+        recommendations['image']='Animated Greeting Card You Are Amazing GIF - Animated Greeting Card You Are Amazing - Discover & Share GIFs.GIF'
     elif cluster_label == 2:
         recommendations['message'] = "Based on the characteristics provided, you belong to the average performers group. Providing consistent support and encouragement can help maintain your current academic performance."
-        recommendations['image']='Animated Greeting Card You Are Amazing GIF - Animated Greeting Card You Are Amazing - Discover & Share GIFs.gif'
+        recommendations['image']='Animated Greeting Card You Are Amazing GIF - Animated Greeting Card You Are Amazing - Discover & Share GIFs.GIF'
     else:
         recommendations['message'] = "Unable to determine recommendations based on provided characteristics."
 
@@ -113,8 +111,9 @@ def main():
     if app_mode=='Home': 
         st.title('STUDENT CLUSTER PREDICTION :') 
         st.image('pexels-keira-burton-6147053.jpg')
-	st.write('This application helps you to predict student performance based on their score on both reading, writing, and mathematics and also visualizes student performance')
-	st.write('Use the sidebar to navigate to the prediction section of the app')
+        st.write('This application helps you to predict student performance based on their score on both reading, writing, and mathematics and also visualizes student performance')
+        st.write('Use the sidebar to navigate to the prediction section of the app')
+      
         st.markdown('Dataset used for Prediction:')
         
         
